@@ -107,7 +107,7 @@ func HandleShorten(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Construct the full shortened URL
-	shortenedURL := fmt.Sprintf("http://localhost:8080/short/%s", shortKey)
+	shortenedURL := fmt.Sprintf("https://urlshortener-guli.onrender.com/short/%s", shortKey)
 
 	// Render the HTML response with the shortened URL
 	w.Header().Set("Content-Type", "text/html")
